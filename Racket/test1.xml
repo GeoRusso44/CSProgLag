@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<mlt>
+  <producer id="1-source">
+    <property name="resource">orange.mkv</property>
+  </producer>
+  <producer id="1-overlay">
+    <property name="resource">slide.png</property>
+  </producer>
+  <tractor id="1-cropped">
+    <multitrack>
+      <track producer="1-source"/>
+    </multitrack>
+    <filter>
+      <property name="track">0</property>
+      <property name="mlt_service">crop</property>
+      <property name="left">420</property>
+      <property name="right">420</property>
+      <property name="top">0</property>
+      <property name="bottom">0</property>
+    </filter>
+    <filter>
+      <property name="track">0</property>
+      <property name="mlt_service">affine</property>
+      <property name="transition.rect">1380/540:540x540</property>
+    </filter>
+  </tractor>
+  <tractor id="1">
+    <multitrack>
+      <track producer="1-cropped"/>
+      <track producer="1-overlay"/>
+    </multitrack>
+    <transition>
+      <property name="a_track">1</property>
+      <property name="b_track">0</property>
+      <property name="mlt_type">transition</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="1">add</property>
+    </transition>
+  </tractor>
+  <playlist id="main-playlist">
+    <entry producer="1" in="6" out="152"/>
+  </playlist>
+</mlt>

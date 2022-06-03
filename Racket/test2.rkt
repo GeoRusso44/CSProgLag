@@ -1,0 +1,5 @@
+#lang slideshow
+(define (list-length list)
+ (if (empty? list)
+ 0
+ (+ 1 (list-length list)))) ;yikes --- this doesn’t work!

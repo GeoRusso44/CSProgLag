@@ -1,0 +1,6 @@
+With MatLab, their are a lot of Libraries that are availbe to the user, but unlike other languages where you need to import them MatLab seems to have them all included at the start,
+but some functions are locked behind others. What I mean by this is in the assignment the function predict() would not be reconized by the help command untill I did help on fitcknn() becuase predict 
+is a dependency on fitcknn. MatLab also has a lot of built in ways to work with data more effectivly then languages like Java or C, things like plots and subplots being fairly easy to
+use. MatLab also has a lot more math functions then I ever delt with in Java or C. One thing that kept messing with me is the lack of camelCasing used in MatLab, alot of functions 
+would just be two words slapped together. The use of cell arrays and the data being in the form of scalers and vectors made working with it interesting. I had to change how I was looking at the data
+becasue im used to standered data types being int double char string[]. This made working with the data easier since I didnt have to worry as much about casting or dealing with unmatched data types.

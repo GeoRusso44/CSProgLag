@@ -1,0 +1,7 @@
+#lang slideshow
+(define (my-length lst)
+ (define (iter lst len)
+ (cond
+ [(empty? len) iter]
+ [else (iter (lst) (+ len 1))]))
+ (iter lst 0)) 

@@ -1,0 +1,555 @@
+<?xml version="1.0"?>
+<mlt>
+  <producer id="1-source">
+    <property name="resource">page000.png</property>
+  </producer>
+  <tractor id="1">
+    <multitrack>
+      <track producer="1-source"/>
+    </multitrack>
+  </tractor>
+  <producer id="2-source">
+    <property name="resource">video/10.1-intro.mkv</property>
+  </producer>
+  <producer id="2-overlay">
+    <property name="resource">page001.png</property>
+  </producer>
+  <tractor id="2-cropped">
+    <multitrack>
+      <track producer="2-source"/>
+    </multitrack>
+    <filter>
+      <property name="track">0</property>
+      <property name="mlt_service">crop</property>
+      <property name="left">100</property>
+      <property name="right">100</property>
+      <property name="top">0</property>
+      <property name="bottom">0</property>
+    </filter>
+    <filter>
+      <property name="track">0</property>
+      <property name="mlt_service">affine</property>
+      <property name="transition.rect">1620/780:300x300</property>
+    </filter>
+  </tractor>
+  <tractor id="2">
+    <multitrack>
+      <track producer="2-cropped"/>
+      <track producer="2-overlay"/>
+    </multitrack>
+    <transition>
+      <property name="a_track">1</property>
+      <property name="b_track">0</property>
+      <property name="mlt_type">transition</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="1">add</property>
+    </transition>
+  </tractor>
+  <producer id="3-source">
+    <property name="resource">video/10.2-prereq.mkv</property>
+  </producer>
+  <producer id="3-overlay">
+    <property name="resource">page002.png</property>
+  </producer>
+  <tractor id="3-cropped">
+    <multitrack>
+      <track producer="3-source"/>
+    </multitrack>
+    <filter>
+      <property name="track">0</property>
+      <property name="mlt_service">crop</property>
+      <property name="left">100</property>
+      <property name="right">100</property>
+      <property name="top">0</property>
+      <property name="bottom">0</property>
+    </filter>
+    <filter>
+      <property name="track">0</property>
+      <property name="mlt_service">affine</property>
+      <property name="transition.rect">1620/780:300x300</property>
+    </filter>
+  </tractor>
+  <tractor id="3">
+    <multitrack>
+      <track producer="3-cropped"/>
+      <track producer="3-overlay"/>
+    </multitrack>
+    <transition>
+      <property name="a_track">1</property>
+      <property name="b_track">0</property>
+      <property name="mlt_type">transition</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="1">add</property>
+    </transition>
+  </tractor>
+  <producer id="4-source">
+    <property name="resource">video/10.3-structure.mkv</property>
+  </producer>
+  <producer id="4-overlay">
+    <property name="resource">page003.png</property>
+  </producer>
+  <tractor id="4-cropped">
+    <multitrack>
+      <track producer="4-source"/>
+    </multitrack>
+    <filter>
+      <property name="track">0</property>
+      <property name="mlt_service">crop</property>
+      <property name="left">100</property>
+      <property name="right">100</property>
+      <property name="top">0</property>
+      <property name="bottom">0</property>
+    </filter>
+    <filter>
+      <property name="track">0</property>
+      <property name="mlt_service">affine</property>
+      <property name="transition.rect">1620/780:300x300</property>
+    </filter>
+  </tractor>
+  <tractor id="4">
+    <multitrack>
+      <track producer="4-cropped"/>
+      <track producer="4-overlay"/>
+    </multitrack>
+    <transition>
+      <property name="a_track">1</property>
+      <property name="b_track">0</property>
+      <property name="mlt_type">transition</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="1">add</property>
+    </transition>
+  </tractor>
+  <producer id="5-source">
+    <property name="resource">video/10.4-merge-sort.mkv</property>
+  </producer>
+  <producer id="5-overlay">
+    <property name="resource">page004.png</property>
+  </producer>
+  <tractor id="5-cropped">
+    <multitrack>
+      <track producer="5-source"/>
+    </multitrack>
+    <filter>
+      <property name="track">0</property>
+      <property name="mlt_service">crop</property>
+      <property name="left">100</property>
+      <property name="right">100</property>
+      <property name="top">0</property>
+      <property name="bottom">0</property>
+    </filter>
+    <filter>
+      <property name="track">0</property>
+      <property name="mlt_service">affine</property>
+      <property name="transition.rect">1620/780:300x300</property>
+    </filter>
+  </tractor>
+  <tractor id="5">
+    <multitrack>
+      <track producer="5-cropped"/>
+      <track producer="5-overlay"/>
+    </multitrack>
+    <transition>
+      <property name="a_track">1</property>
+      <property name="b_track">0</property>
+      <property name="mlt_type">transition</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="1">add</property>
+    </transition>
+  </tractor>
+  <producer id="6-source">
+    <property name="resource">video/10.5-merge-sort-2.mkv</property>
+  </producer>
+  <producer id="6-overlay">
+    <property name="resource">page005.png</property>
+  </producer>
+  <tractor id="6-cropped">
+    <multitrack>
+      <track producer="6-source"/>
+    </multitrack>
+    <filter>
+      <property name="track">0</property>
+      <property name="mlt_service">crop</property>
+      <property name="left">100</property>
+      <property name="right">100</property>
+      <property name="top">0</property>
+      <property name="bottom">0</property>
+    </filter>
+    <filter>
+      <property name="track">0</property>
+      <property name="mlt_service">affine</property>
+      <property name="transition.rect">1620/780:300x300</property>
+    </filter>
+  </tractor>
+  <tractor id="6">
+    <multitrack>
+      <track producer="6-cropped"/>
+      <track producer="6-overlay"/>
+    </multitrack>
+    <transition>
+      <property name="a_track">1</property>
+      <property name="b_track">0</property>
+      <property name="mlt_type">transition</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="1">add</property>
+    </transition>
+  </tractor>
+  <producer id="7-source">
+    <property name="resource">video/10.6-recursion-tree.mkv</property>
+  </producer>
+  <producer id="7-overlay">
+    <property name="resource">page006.png</property>
+  </producer>
+  <tractor id="7-cropped">
+    <multitrack>
+      <track producer="7-source"/>
+    </multitrack>
+    <filter>
+      <property name="track">0</property>
+      <property name="mlt_service">crop</property>
+      <property name="left">100</property>
+      <property name="right">100</property>
+      <property name="top">0</property>
+      <property name="bottom">0</property>
+    </filter>
+    <filter>
+      <property name="track">0</property>
+      <property name="mlt_service">affine</property>
+      <property name="transition.rect">1620/780:300x300</property>
+    </filter>
+  </tractor>
+  <tractor id="7">
+    <multitrack>
+      <track producer="7-cropped"/>
+      <track producer="7-overlay"/>
+    </multitrack>
+    <transition>
+      <property name="a_track">1</property>
+      <property name="b_track">0</property>
+      <property name="mlt_type">transition</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="1">add</property>
+    </transition>
+  </tractor>
+  <producer id="8-source">
+    <property name="resource">video/10.7-geometric-series.mkv</property>
+  </producer>
+  <producer id="8-overlay">
+    <property name="resource">page007.png</property>
+  </producer>
+  <tractor id="8-cropped">
+    <multitrack>
+      <track producer="8-source"/>
+    </multitrack>
+    <filter>
+      <property name="track">0</property>
+      <property name="mlt_service">crop</property>
+      <property name="left">100</property>
+      <property name="right">100</property>
+      <property name="top">0</property>
+      <property name="bottom">0</property>
+    </filter>
+    <filter>
+      <property name="track">0</property>
+      <property name="mlt_service">affine</property>
+      <property name="transition.rect">1620/780:300x300</property>
+    </filter>
+  </tractor>
+  <tractor id="8">
+    <multitrack>
+      <track producer="8-cropped"/>
+      <track producer="8-overlay"/>
+    </multitrack>
+    <transition>
+      <property name="a_track">1</property>
+      <property name="b_track">0</property>
+      <property name="mlt_type">transition</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="1">add</property>
+    </transition>
+  </tractor>
+  <producer id="9-source">
+    <property name="resource">video/10.8-integer-mult.mkv</property>
+  </producer>
+  <producer id="9-overlay">
+    <property name="resource">page008.png</property>
+  </producer>
+  <tractor id="9-cropped">
+    <multitrack>
+      <track producer="9-source"/>
+    </multitrack>
+    <filter>
+      <property name="track">0</property>
+      <property name="mlt_service">crop</property>
+      <property name="left">100</property>
+      <property name="right">100</property>
+      <property name="top">0</property>
+      <property name="bottom">0</property>
+    </filter>
+    <filter>
+      <property name="track">0</property>
+      <property name="mlt_service">affine</property>
+      <property name="transition.rect">1620/780:300x300</property>
+    </filter>
+  </tractor>
+  <tractor id="9">
+    <multitrack>
+      <track producer="9-cropped"/>
+      <track producer="9-overlay"/>
+    </multitrack>
+    <transition>
+      <property name="a_track">1</property>
+      <property name="b_track">0</property>
+      <property name="mlt_type">transition</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="1">add</property>
+    </transition>
+  </tractor>
+  <producer id="10-source">
+    <property name="resource">video/10.9-base-n-2.mkv</property>
+  </producer>
+  <producer id="10-overlay">
+    <property name="resource">page009.png</property>
+  </producer>
+  <tractor id="10-cropped">
+    <multitrack>
+      <track producer="10-source"/>
+    </multitrack>
+    <filter>
+      <property name="track">0</property>
+      <property name="mlt_service">crop</property>
+      <property name="left">100</property>
+      <property name="right">100</property>
+      <property name="top">0</property>
+      <property name="bottom">0</property>
+    </filter>
+    <filter>
+      <property name="track">0</property>
+      <property name="mlt_service">affine</property>
+      <property name="transition.rect">1620/780:300x300</property>
+    </filter>
+  </tractor>
+  <tractor id="10">
+    <multitrack>
+      <track producer="10-cropped"/>
+      <track producer="10-overlay"/>
+    </multitrack>
+    <transition>
+      <property name="a_track">1</property>
+      <property name="b_track">0</property>
+      <property name="mlt_type">transition</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="1">add</property>
+    </transition>
+  </tractor>
+  <producer id="11-source">
+    <property name="resource">video/10.A-first-approach.mkv</property>
+  </producer>
+  <producer id="11-overlay">
+    <property name="resource">page010.png</property>
+  </producer>
+  <tractor id="11-cropped">
+    <multitrack>
+      <track producer="11-source"/>
+    </multitrack>
+    <filter>
+      <property name="track">0</property>
+      <property name="mlt_service">crop</property>
+      <property name="left">100</property>
+      <property name="right">100</property>
+      <property name="top">0</property>
+      <property name="bottom">0</property>
+    </filter>
+    <filter>
+      <property name="track">0</property>
+      <property name="mlt_service">affine</property>
+      <property name="transition.rect">1620/780:300x300</property>
+    </filter>
+  </tractor>
+  <tractor id="11">
+    <multitrack>
+      <track producer="11-cropped"/>
+      <track producer="11-overlay"/>
+    </multitrack>
+    <transition>
+      <property name="a_track">1</property>
+      <property name="b_track">0</property>
+      <property name="mlt_type">transition</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="1">add</property>
+    </transition>
+  </tractor>
+  <producer id="12-source">
+    <property name="resource">video/10.B-bad-news.mkv</property>
+  </producer>
+  <producer id="12-overlay">
+    <property name="resource">page011.png</property>
+  </producer>
+  <tractor id="12-cropped">
+    <multitrack>
+      <track producer="12-source"/>
+    </multitrack>
+    <filter>
+      <property name="track">0</property>
+      <property name="mlt_service">crop</property>
+      <property name="left">100</property>
+      <property name="right">100</property>
+      <property name="top">0</property>
+      <property name="bottom">0</property>
+    </filter>
+    <filter>
+      <property name="track">0</property>
+      <property name="mlt_service">affine</property>
+      <property name="transition.rect">1620/780:300x300</property>
+    </filter>
+  </tractor>
+  <tractor id="12">
+    <multitrack>
+      <track producer="12-cropped"/>
+      <track producer="12-overlay"/>
+    </multitrack>
+    <transition>
+      <property name="a_track">1</property>
+      <property name="b_track">0</property>
+      <property name="mlt_type">transition</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="1">add</property>
+    </transition>
+  </tractor>
+  <producer id="13-source">
+    <property name="resource">video/10.C-better.mkv</property>
+  </producer>
+  <producer id="13-overlay">
+    <property name="resource">page012.png</property>
+  </producer>
+  <tractor id="13-cropped">
+    <multitrack>
+      <track producer="13-source"/>
+    </multitrack>
+    <filter>
+      <property name="track">0</property>
+      <property name="mlt_service">crop</property>
+      <property name="left">100</property>
+      <property name="right">100</property>
+      <property name="top">0</property>
+      <property name="bottom">0</property>
+    </filter>
+    <filter>
+      <property name="track">0</property>
+      <property name="mlt_service">affine</property>
+      <property name="transition.rect">1620/780:300x300</property>
+    </filter>
+  </tractor>
+  <tractor id="13">
+    <multitrack>
+      <track producer="13-cropped"/>
+      <track producer="13-overlay"/>
+    </multitrack>
+    <transition>
+      <property name="a_track">1</property>
+      <property name="b_track">0</property>
+      <property name="mlt_type">transition</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="1">add</property>
+    </transition>
+  </tractor>
+  <producer id="14-source">
+    <property name="resource">video/10.D-gauss.mkv</property>
+  </producer>
+  <producer id="14-overlay">
+    <property name="resource">page013.png</property>
+  </producer>
+  <tractor id="14-cropped">
+    <multitrack>
+      <track producer="14-source"/>
+    </multitrack>
+    <filter>
+      <property name="track">0</property>
+      <property name="mlt_service">crop</property>
+      <property name="left">100</property>
+      <property name="right">100</property>
+      <property name="top">0</property>
+      <property name="bottom">0</property>
+    </filter>
+    <filter>
+      <property name="track">0</property>
+      <property name="mlt_service">affine</property>
+      <property name="transition.rect">1620/780:300x300</property>
+    </filter>
+  </tractor>
+  <tractor id="14">
+    <multitrack>
+      <track producer="14-cropped"/>
+      <track producer="14-overlay"/>
+    </multitrack>
+    <transition>
+      <property name="a_track">1</property>
+      <property name="b_track">0</property>
+      <property name="mlt_type">transition</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="1">add</property>
+    </transition>
+  </tractor>
+  <producer id="15-source">
+    <property name="resource">page014.png</property>
+  </producer>
+  <tractor id="15">
+    <multitrack>
+      <track producer="15-source"/>
+    </multitrack>
+  </tractor>
+  <producer id="16-source">
+    <property name="resource">video/10.E-algorithm.mkv</property>
+  </producer>
+  <producer id="16-overlay">
+    <property name="resource">page015.png</property>
+  </producer>
+  <tractor id="16-cropped">
+    <multitrack>
+      <track producer="16-source"/>
+    </multitrack>
+    <filter>
+      <property name="track">0</property>
+      <property name="mlt_service">crop</property>
+      <property name="left">100</property>
+      <property name="right">100</property>
+      <property name="top">0</property>
+      <property name="bottom">0</property>
+    </filter>
+    <filter>
+      <property name="track">0</property>
+      <property name="mlt_service">affine</property>
+      <property name="transition.rect">1620/780:300x300</property>
+    </filter>
+  </tractor>
+  <tractor id="16">
+    <multitrack>
+      <track producer="16-cropped"/>
+      <track producer="16-overlay"/>
+    </multitrack>
+    <transition>
+      <property name="a_track">1</property>
+      <property name="b_track">0</property>
+      <property name="mlt_type">transition</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="1">add</property>
+    </transition>
+  </tractor>
+  <playlist id="main-playlist">
+    <entry producer="1" in="0" out="50"/>
+    <entry producer="2" in="6" out="1665"/>
+    <entry producer="3" in="29" out="776"/>
+    <entry producer="4" in="13" out="2136"/>
+    <entry producer="5" in="47" out="2109"/>
+    <entry producer="6" in="14" out="5503"/>
+    <entry producer="7" in="23" out="3778"/>
+    <entry producer="8" in="27" out="1854"/>
+    <entry producer="9" in="21" out="2667"/>
+    <entry producer="10" in="6" out="2203"/>
+    <entry producer="11" in="18" out="2012"/>
+    <entry producer="12" in="26" out="935"/>
+    <entry producer="13" in="20" out="2219"/>
+    <entry producer="14" in="16" out="2315"/>
+    <entry producer="15" in="0" out="50"/>
+    <entry producer="16" in="10" out="3580"/>
+  </playlist>
+</mlt>

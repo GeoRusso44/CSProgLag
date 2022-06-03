@@ -1,0 +1,8 @@
+For the Syntax and semantics their is a lot I can talk about, thefirst thing is how this language does not follow the norm of other progrmaing languages and starts arrays at 1 not 0
+This took me some time to get strigh in my head as I would iterate one to many times on some of my loops.
+Another thing that makes this outside the norm of languages I have used is that the use of semicolens are more for the programers convinces by suppresing the output box,
+luckly I still have the habit of adding them so I was fine. One thing that I learned that was amazing to me and I wish opther languages used was %%, this allows for you to segment you code
+into diffrent blocks. these blocks can run independely of eachother and allow for you to orginze you code a lot more. Another thing is that MatLab uses [] {} () brackets in very specific 
+but diffrent ways to many other languages I have used, more importently that you can have a user definded functionj give off more then one output. That was crazy to wrap my head around
+for reference to anyone reading this, I programmed in C and Java before this class so switching to an engeeneering based language has some major differences. The other thing thats interesting
+with MatLab is that is bases everything off arrays, scalers, and vectors. I learned about cell arrays which were cool to play with, they allow for many diffent data types to be stored in one array.

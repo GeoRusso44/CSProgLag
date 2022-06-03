@@ -1,0 +1,134 @@
+{
+  "currentFrameRate": 112.272,
+  "devices": [],
+  "gestures": [],
+  "hands": [
+    {
+      "armWidth": 64.4217,
+      "elbow": [
+        -149.934,
+        199.078,
+        320.744
+      ],
+      "grabAngle": 0.821172,
+      "id": 55,
+      "palmNormal": [
+        -0.0588812,
+        -0.949957,
+        -0.306781
+      ],
+      "palmPosition": [
+        -38.5246,
+        285.96,
+        3.51789
+      ],
+      "palmWidth": 92.5984,
+      "stabilizedPalmPosition": [
+        -42.8339,
+        290.01,
+        0.611531
+      ],
+      "startTime": 1668, 
+      "type": "right",
+      "wrist": [
+        -40.5378,
+        266.828,
+        77.9638
+      ]
+    }
+  ],
+  "pointables": [
+    {
+      "extended": true,
+      "handId": 55,
+      "id": 550,
+      "length": 51.6303,
+      "stabilizedTipPosition": [
+        -103.661,
+        272.683,
+        -40.1433
+      ],
+      "tipPosition": [
+        -99.4546,
+        270.994,
+        -37.676
+      ],
+      "type": 0
+    },
+    {
+      "extended": true,
+      "handId": 55,
+      "id": 551,
+      "length": 58.259,
+      "stabilizedTipPosition": [
+        -70.3877,
+        292.003,
+        -100.478
+      ],
+      "tipPosition": [
+        -65.5975,
+        290.195,
+        -97.4125
+      ],
+      "type": 1
+    },
+    {
+      "extended": true,
+      "handId": 55,
+      "id": 552,
+      "length": 66.3814,
+      "stabilizedTipPosition": [
+        -42.4361,
+        287.369,
+        -108.611
+      ],
+      "tipPosition": [
+        -37.6472,
+        285.778,
+        -105.631
+      ],
+      "type": 2
+    },
+    {
+      "extended": true,
+      "handId": 55,
+      "id": 553,
+      "length": 63.8275,
+      "stabilizedTipPosition": [
+        -17.6889,
+        276.97,
+        -94.9429
+      ],
+      "tipPosition": [
+        -13.7409,
+        276.378,
+        -92.2493
+      ],
+      "type": 3
+    },
+    {
+      "extended": true,
+      "handId": 55,
+      "id": 554,
+      "length": 50.0396,
+      "stabilizedTipPosition": [
+        1.33944,
+        270.159,
+        -68.0347
+      ],
+      "tipPosition": [
+        4.55475,
+        269.617,
+        -65.6459
+      ],
+      "type": 4
+    }
+  ],
+  "s": 1.23244,
+  "t": [
+    15.694,
+    10.9346,
+    -7.34479
+  ],
+  "timestamp": 5771221191
+}
